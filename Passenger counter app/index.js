@@ -1,13 +1,12 @@
 
-let countEl = document.getElementById("count-el");
+let countEl = document.getElementById("count-el"); 
+// Grabs objects from HTML file so that it can be implemented or changed from 
 
-console.log(countEl)
 let count = 0
 
  function increment() {
-    count = count + 1; 
-    countEl.innerText = count;
-    
+   count = count + 1; 
+   countEl.innerText = count;
  }
 
 
