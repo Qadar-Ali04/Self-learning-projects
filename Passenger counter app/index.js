@@ -3,6 +3,10 @@ let welcomeEl = document.getElementById("welcome-el")
 let countEl = document.getElementById("count-el"); 
 // Grabs objects from HTML file so that it can be implemented or changed to make it interactive. 
 
+let name = "Qadar Ali"
+let greeting = "Welcome back, "
+
+welcomeEl.innerText = greeting + name; 
 
 
 let count = 0
