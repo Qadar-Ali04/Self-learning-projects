@@ -1,6 +1,9 @@
 
+let welcomeEl = document.getElementById("welcome-el")
 let countEl = document.getElementById("count-el"); 
 // Grabs objects from HTML file so that it can be implemented or changed from 
+
+
 
 let count = 0
 
@@ -8,6 +11,7 @@ let count = 0
    count = count + 1; 
    countEl.innerText = count;
  }
+
 
 
  
