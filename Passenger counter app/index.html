@@ -3,15 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crate Counter</title>
     <link rel="stylesheet" href="styles.css">
 </head>
  <body>
-    <p id="welcome-el"> </p>
-    <h1>People entered:</h1>
-    <h2 id="count-el">0</h2>
-    <button id ="increment-btn" onclick="increment()">INCREMENT</button>
-    <button id="save-btn" onclick="save()">Save</button>
-    <script src="index.js"></script>
+    <!-- Button to open the modal login form -->
+    <button id=login-btn onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+     <!--Employee login details-->
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="container">
+            <label for="username"><b>Name: </b></label>
+            <input type="text" placeholder="Enter Name" name="username" required>
+
+             <label for="pin"><b>Pin:</b></label>
+            <input type="password" placeholder="Enter Pin" inputmode="numeric" maxlength="4" name="pin" required>
+
+            <button type="submit" id="login-btn">Login</button>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancel-btn">Cancel</button>
+        </div>
+    </form>
+
+
+    <!--Background image-->
+    <div class="bg-image"></div> 
+    
+    <!--Crate counter-->
+    <div>    
+        <p id="welcome-el"> </p> 
+        <h1>Crate delivered:</h1>
+        <h2 id="count-el">0</h2>
+        <button id ="increment-btn" onclick="increment()">INCREMENT</button>
+        <button id="save-btn" onclick="save()">Save</button>
+        <p id="save-el">Previous entires:  </p>
+        <script src="index.js"></script>
+    </div>
  </body>
 </html>
